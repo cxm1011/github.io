@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>水平居中</h1>
+    <!--line元素水平居中-->
+    <div style="text-align: center">
+        <span>line元素水平居中</span>
+    </div>
+
+    <!--block元素水平居中-->
+    <div>
+        <div style="margin: 0 auto;width:140px">block元素水平居中</div>
+    </div>
+
+    <!--多个块级元素水平居中方法1-->
+    <div style="text-align: center">
+        <div style="display: inline;">block块级1</div>
+        <div style="display: inline;">block块级2</div>
+        <div style="display: inline;">block块级3</div>
+    </div>
+
+    <!--多个块级元素水平居中方法2-->
+    <div style="display: flex;justify-content:center">
+        <div>block块级1</div>
+        <div>block块级2</div>
+        <div>block块级3</div>
+    </div>
+
+    <h1>垂直居中</h1>
+    <h4>垂直居中1</h4>
+    <!-- 知道高度-->
+    <div style="height: 100px;background-color: red;width:200px; position:relative;">
+       <div style="height: 60px;width: 60px ;background-color: blue;position: absolute;top:20px"></div>
+   
+    </div>
+    <h4>垂直居中2</h4>
+    <div style="height: 100px;background-color: red;width:200px; display:flex;align-items: center">
+       <div style="height: 60px;width: 60px ;background-color: blue;"></div>
+   
+    </div>
+    <h4>垂直居中3</h4>
+    <div style="height: 100px;background-color: red;width:200px; display:table-cell;vertical-align: middle">
+       <div style="height: 60px;width: 60px ;background-color: blue;"></div>
+    </div>
+
+    <h1>水平垂直居中</h1>
+    <h4>水平垂直居中1</h4>
+    <div style="height: 100px;background-color: red;width:200px; position:relative;">
+        <div style="height: 60px;width: 60px ;background-color: blue;position: absolute;left:70px;top:20px"></div>
+    </div>
+
+    <h4>水平垂直居中2</h4>
+    <div style="height: 100px;background-color: red;width:200px; display:flex;align-items: center;justify-content: center">
+        <div style="height: 60px;width: 60px ;background-color: blue;"></div>
+    </div>
+</body>
+</html>
